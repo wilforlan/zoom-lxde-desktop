@@ -23,6 +23,7 @@ RUN apt-get update \
         testssl.sh bsdmainutils nghttp2 \
         icedtea-netx icedtea-plugin \
         openssh-server pwgen\
+        libxcb-keysyms1 libxcb-randr0 libxcb-image0 libxcb-xtest0 libxcb-xinerama0 ibus libxkbcommon-x11-0 \
     && add-apt-repository -r ppa:fcwu-tw/apps \
     && apt-get autoclean \
     && apt-get autoremove \
