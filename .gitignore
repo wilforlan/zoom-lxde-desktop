@@ -1,0 +1,5 @@
+*.pyc
+tags
+cscope*
+app/node_modules
+web/node_modules

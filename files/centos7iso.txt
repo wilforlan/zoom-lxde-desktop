@@ -1,0 +1,6 @@
+cd /root
+#wget http://mirror.internode.on.net/pub/centos/7.5.1804/isos/x86_64/CentOS-7-x86_64-Minimal-1804.iso
+#wget http://mirror.internode.on.net/pub/centos/7.5.1804/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso
+wget http://centos.bhs.mirrors.ovh.net/ftp.centos.org/7.7.1908/isos/x86_64/CentOS-7-x86_64-Minimal-1908.iso
+#wget http://centos.bhs.mirrors.ovh.net/ftp.centos.org/7.7.1908/isos/x86_64/CentOS-7-x86_64-DVD-1908.iso
+wget http://centos.bhs.mirrors.ovh.net/ftp.centos.org/8.0.1905/isos/x86_64/CentOS-8-x86_64-1905-boot.iso
