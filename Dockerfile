@@ -90,6 +90,7 @@ RUN cd /src/web \
 FROM system
 LABEL maintainer="williams@fireflies.ai"
 
+RUN apt-get install build-essential
 # download and install zoom client
 ARG ZOOM_URL=https://zoom.us/client/latest/zoom_amd64.deb
 
