@@ -8,7 +8,7 @@ RUN if [ "x$localbuild" != "x" ]; then sed -i 's#http://archive.ubuntu.com/#http
 
 # built-in packages
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends software-properties-common curl apache2-utils \
+    && apt-get install -y --no-install-recommends software-properties-common build-essential gnupg curl apache2-utils \
     && add-apt-repository ppa:fcwu-tw/apps \
     && apt-get update \
     && apt-get install -y --no-install-recommends --allow-unauthenticated \
@@ -90,7 +90,6 @@ RUN cd /src/web \
 FROM system
 LABEL maintainer="williams@fireflies.ai"
 
-RUN apt-get install build-essential
 # download and install zoom client
 ARG ZOOM_URL=https://zoom.us/client/latest/zoom_amd64.deb
 
