@@ -128,9 +128,8 @@ WORKDIR /root
 COPY app /root/app
 RUN ls /root
 # open zoom-puppet dir and install modules
-RUN cd /root/app
+RUN cd /root/app && npm install
 RUN ls /root/app
-RUN npm install
 
 # go back to root
 RUN cd /root
