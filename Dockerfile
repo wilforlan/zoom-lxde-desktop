@@ -125,10 +125,11 @@ EXPOSE 80
 
 WORKDIR /root
 
-COPY app /root/
-
+COPY app /root/app
+RUN ls /root
 # open zoom-puppet dir and install modules
 RUN cd /root/app
+RUN ls /root/app
 RUN npm install
 
 # go back to root
