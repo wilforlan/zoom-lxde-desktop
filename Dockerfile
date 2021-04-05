@@ -65,7 +65,7 @@ ARG localbuild
 RUN if [ "x$localbuild" != "x" ]; then sed -i 's#http://archive.ubuntu.com/#http://tw.archive.ubuntu.com/#' /etc/apt/sources.list; fi
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends curl ca-certificates
+    && apt-get install -y --no-install-recommends curl git ca-certificates
 
 # nodejs
 RUN curl -sL https://deb.nodesource.com/setup_9.x | bash - \
