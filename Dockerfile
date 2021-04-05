@@ -125,14 +125,11 @@ EXPOSE 80
 
 WORKDIR /root
 
-COPY app /root/app
-RUN ls /root
-# open zoom-puppet dir and install modules
-RUN cd /root/app && npm install
-RUN ls /root/app
+# copy file for our application install modules
 
-# go back to root
-RUN cd /root
+COPY app /root/app
+RUN cd /root/app \
+    && npm install
 
 ENV HOME=/home/ubuntu \
     SHELL=/bin/bash
