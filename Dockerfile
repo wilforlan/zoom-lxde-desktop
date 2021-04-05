@@ -77,6 +77,10 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
     && apt-get update \
     && apt-get install -y yarn
 
+# clone submodules
+RUN git clone https://github.com/novnc/noVNC.git web/static/novnc
+RUN git clone https://github.com/novnc/websockify web/static/websockify
+
 # build frontend
 COPY web /src/web
 RUN cd /src/web \
